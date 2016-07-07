@@ -33,12 +33,14 @@ var opt={
   overwrite: args.force,
   verbose: args.v,
   readonly: args.verify,
+  addonly: args.add,
 };
 
 if (args.params.length<1) {
   console.log("usage: chkbit [options] path [...]");
   console.log("The options are as follows:");
   console.log("-verify verify without updating the .chkbit files");
+  console.log("-add    add and update files only - don't verify checksums");
   console.log("-force  overwrite inconsistent checksum (repair)");
   console.log("-del    delete all .chkbit files");
   console.log("-p=N    number of parallel operations (default 5)");
