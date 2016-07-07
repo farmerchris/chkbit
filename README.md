@@ -29,6 +29,7 @@ chkbit will
 usage: chkbit [options] path [...]
 The options are as follows:
 -verify verify without updating the .chkbit files
+-add    add and update files only - don't verify checksums
 -force  overwrite inconsistent checksum (repair)
 -del    delete all .chkbit files
 -p=N    number of parallel operations (default 5)
